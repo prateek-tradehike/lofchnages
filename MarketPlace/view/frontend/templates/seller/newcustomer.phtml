@@ -38,7 +38,7 @@ $marketplaceUrl = $this->helper('Lof\MarketPlace\Helper\Data')->getConfig('gener
         <p><?= $block->escapeHtml(__('Creating an account has many benefits: check out faster, keep more than one address, track orders and more.')) ?></p>
         <div class="actions-toolbar">
             <div class="primary">
-                <a href="<?= $block->escapeUrl($block->getUrl($marketplaceUrl.'/seller/create')) ?>"
+                <a href="<?= $block->escapeUrl($block->getUrl('lofmarketplace/seller/create')) ?>"
                    class="action create primary">
                     <span><?= $block->escapeHtml(__('Create an Account')) ?></span>
                 </a>

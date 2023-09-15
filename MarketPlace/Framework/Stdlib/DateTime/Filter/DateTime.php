@@ -32,7 +32,7 @@ class DateTime extends Date
     public function __construct(\Magento\Framework\Stdlib\DateTime\TimezoneInterface $localeDate)
     {
         parent::__construct($localeDate);
-        $this->_localToNormalFilter = new \Zend_Filter_LocalizedToNormalized(
+        $this->_localToNormalFilter = new \Magento\Framework\Filter\LocalizedToNormalized(
             [
                 'date_format' => $this->_localeDate->getDateTimeFormat(
                     \IntlDateFormatter::SHORT
